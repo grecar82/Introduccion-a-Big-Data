@@ -12,7 +12,7 @@ Yarn (Yet Another Resource Negotiator) es una pieza fundamental en el ecosistema
 
 Yarn separa las dos funcionalidades principales: la gestión de recursos y la planificación y monitorización de trabajos. Con esta idea, es posible tener un gestor global (Resource Manager) y un Application Master por cada aplicación.
 
-![4](assets/4.png)
+![4](assets/4.PNG)
 
 ## Resource Manager
 
@@ -33,7 +33,7 @@ El Node Manager (NM) gestiona los trabajos con las instrucciones del Resource Ma
 
 Los contenedores Yarn tienen una asignación de recursos (cpu, memoria, disco y red) fija de un host del clúster y el Node Manager es el encargado de monitorizar esta asignación. Mapean las variables de entorno necesarias, las dependencias y los servicios necesarios para crear los procesos.
 
-![6](assets/6.png)
+![6](assets/6.PNG)
 
 ## Application Master
 
@@ -45,28 +45,28 @@ A continuación vamos a correr un cluster con un único solo nodo tal como lo pl
 
 hdfs namenode -format
 
-![2](assets/2.png)
+![2](assets/2.PNG)
 
 si todo ha salido bien, debería aparecerte despues de ese comando lo siguiente:
 
-![3](assets/3.png)
+![3](assets/3.PNG)
 
 Tu Namenode ha sido inicialiado (puedes cerrar la ventana). Abre un nuevo CMD o Terminal y haz un change directory para acceder a la carpeta de Hadoop que está en el root de tu unidad. En caso de no saber en que carpeta estás, usa dir:
 
-![7](assets/7.png)
+![7](assets/7.PNG)
 
 En mi caso usaré cd.. (ir al folder previo) hasta llegar al root de mi unidad
 
-![8](assets/8.png)
+![8](assets/8.PNG)
 
 Listo, haré un cd a hadoop, y de ahí a sbin. Cuando estés situado en sbin, corre start-all:
 
-![10](assets/9.png)
+![10](assets/10.PNG)
 
 Ahora estás en YARN Hadoop:
 
-![11](assets/11.png)
+![11](assets/11.PNG)
 
 con el comando JPS podemos saber que procesos Java se están ejecutando (nodos):
 
-![12](assets/12.png)
+![12](assets/12.PNG)
